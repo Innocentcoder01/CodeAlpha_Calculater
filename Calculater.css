@@ -1,0 +1,141 @@
+/* Sets a linear gradient background for the body */
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(144,73,11,1) 14%, rgba(166,7,7,1) 56%, rgba(0,212,255,1) 100%);
+}
+
+/* Styles the main calculator container */
+.calculator {
+    width: 500px;  
+    padding-top: 21px; 
+    position: absolute; 
+    top: 50%; 
+    left: 70%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+}
+
+/* Styles the display area of the calculator */
+.display {
+    border: none;
+    background: white; 
+    border-radius: 30px; 
+    font-weight: 300; 
+    margin-left: 179px; 
+    margin-bottom: -24px; 
+    color: black;  
+}
+
+/* Styles the display text */
+#display {
+    height: 58px; 
+    width: 301px; 
+    font-size: 40px; 
+    font-family: Arial, sans-serif; 
+}
+
+/* Styles the container for the calculator buttons using a grid layout */
+.buttons {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px; 
+    padding: 46px 16px 13px 178px; 
+}
+
+/* Styles the container for the bottom row of buttons (0 and =) using a grid layout */
+.button {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr); 
+    gap: 5px; 
+    padding: 2px 15px 2px 181px; 
+}
+
+/* Styles for the individual calculator buttons */
+.btn {
+    width: 70px; 
+    height: 70px; 
+    background-color: skyblue; 
+    color: white; 
+    border: none; 
+    border-radius: 50%; 
+    font-size: 25px; 
+    text-align: center;
+    cursor: pointer; 
+}
+        
+/* Styles for the '0' button */
+.btn0 {
+    width: 147px; 
+    height: 66px; 
+    background-color: whitesmoke; 
+    color: black; 
+    border: none; 
+    border-radius: 20%; 
+    font-size: 25px; 
+    text-align: center; 
+    cursor: pointer; 
+}
+
+/* Styles for the '=' button */
+.btnequal {
+    width: 147px; 
+    height: 66px;
+    background-color: whitesmoke; 
+    color: black;
+    border: none; 
+    border-radius: 20%; 
+    font-size: 25px; 
+    text-align: center; 
+    cursor: pointer; 
+}
+
+/* Hover state for the calculator buttons */
+.btn:hover {
+    background-color: #ddd; 
+}
+
+/* Active state for the calculator buttons */
+.btn:active {
+    background-color: #ccc; 
+}
+
+/* Specific styles for every fourth button in each row (typically the operators) */
+.btn:nth-child(4n+4) {
+    background-color: red; 
+    color: #fff; 
+}
+
+.btn:nth-child(4n+4):hover {
+    background-color: #e08900; /* Changes background color on hover */
+}
+
+.btn:nth-child(4n+4):active {
+    background-color: #cc7900; /* Changes background color on click */
+}
+
+/* Styles for the main heading */
+h1 {
+    margin-top: 221px; 
+    margin-left: -466px;
+    font-family: "Playfair Display", serif; 
+    font-optical-sizing: auto; 
+    font-weight: 800; 
+    font-style: normal; 
+    font-size: 38px; 
+    text-decoration: underline; 
+    text-align: center; 
+    color: white; 
+    text-transform: uppercase; 
+}
+
+/* Styles for the subheading */
+h2 {
+    color: white; 
+    margin-top: -17px; 
+    margin-left: 259px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto; 
+    font-weight: 800; 
+    font-style: normal; 
+    font-size: 36px;
+    text-decoration: underline;
+}

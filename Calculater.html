@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character set declaration for proper text rendering -->
+    <meta charset="UTF-8">
+    <!-- Ensures proper scaling on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="Calculater.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Introduction section with a title and author name -->
+    <div>
+        <h1>A simple calculator using <br> HTML, CSS and JavaScript <br> Made By </h1>
+        <br>
+        <h2>Sachin Srivastava</h2>
+    </div>
+    <!-- Main calculator container -->
+    <div class="calculator">
+        <!-- Display area for the calculator's output -->
+        <div class="display" id="display">0</div>
+        <!-- Container for the calculator buttons -->
+        <div class="buttons">
+            <!-- Calculator buttons with onclick events to trigger respective JavaScript functions -->
+            <button class="btn" onclick="clearDisplay()">C</button>
+            <button class="btn" onclick="appendValue('/')">/</button>
+            <button class="btn" onclick="appendValue('*')">*</button>
+            <button class="btn" onclick="backspace()">←</button>
+            <button class="btn" onclick="appendValue('7')">7</button>
+            <button class="btn" onclick="appendValue('8')">8</button>
+            <button class="btn" onclick="appendValue('9')">9</button>
+            <button class="btn" onclick="appendValue('+')">+</button>
+            <button class="btn" onclick="appendValue('4')">4</button>
+            <button class="btn" onclick="appendValue('5')">5</button>
+            <button class="btn" onclick="appendValue('6')">6</button>
+            <button class="btn" onclick="appendValue('-')">-</button>
+            <button class="btn" onclick="appendValue('1')">1</button>
+            <button class="btn" onclick="appendValue('2')">2</button>
+            <button class="btn" onclick="appendValue('3')">3</button>
+            <button class="btn" onclick="appendValue('.')">.</button>
+        </div>
+        <!-- Separate div for the 0 and = buttons to style them differently -->
+        <div class="button"> 
+            <button class="btn0" onclick="appendValue('0')">0</button>
+            <button class="btnequal" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="Calculater.js"></script>
+</body>
+</html>
+
