@@ -18,4 +18,4 @@ This project is a simple calculator application built with HTML, CSS, and JavaSc
 - `calculater.css` - Contains the styling for the calculator.
 - `calculater.js` - Contains the functionality for the calculator.
 
-![Calculator Image](calculater.png)
+![Calculator Image](Calculater.png)
